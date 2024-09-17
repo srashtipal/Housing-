@@ -1,0 +1,7 @@
+<div class="row">
+    <!-- ngfor used for repeating value or card  -->
+<div *ngFor="let Property of Properties" class="shadow-lg  col-sm-4 p-3">
+    <!-- //Property binding [] -->
+    <app-Property-Card [Property]="Property"></app-Property-Card>
+</div>
+</div>

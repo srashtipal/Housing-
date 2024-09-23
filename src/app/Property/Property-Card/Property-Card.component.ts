@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { Iproperty } from "../Iproperty.interface";
 
 @Component({
     selector:'app-Property-Card',
@@ -10,7 +11,7 @@ import { Component, Input } from "@angular/core";
 
 export class PropertyCardComponent{
   //Passing data from Parent component to child component
-  @Input() Property : any
+  @Input() Property : Iproperty;
 
   // Property:any = {
   //         "Id":1,

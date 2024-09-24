@@ -1,7 +1,9 @@
 
     <div class="card">
       <div class="card-img-wrapper">
-      <Img class="card-img-top" src="assets/Images/House.avif">
+      <Img *ngIf="Property.Images"  class="card-img-top" src="assets/Images/{{Property.Images}}.jpeg">
+        <Img *ngIf="!Property.Images"  class="card-img-top" src="assets/Images/House.avif">
+
         <ul class="list-inline  text-center member-icons animate">
           <li class="list-inline-item ">
             <button class="btn btn-primary" routerLink="/property-detail/{{Property.Id}}"><i class="fa-regular fa-pen-to-square"></i>

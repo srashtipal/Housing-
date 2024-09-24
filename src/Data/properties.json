@@ -1,39 +1,65 @@
 [
     {
     "Id":1,
+    "SellRent":"1",
     "Name":"Birla House",
     "Type":"House",
-    "Price":12000
+    "Price":12000,
+    "Images" : "prop-1"
     },
 
     {
       "Id":2,
+      "SellRent":"1",
       "Name":"Kukreja House",
       "Type":"House",
-      "Price":18000
+      "Price":18000,
+      "Images" : "prop-2"
+
       },
       {
         "Id":3,
+        "SellRent":"1",
         "Name":"Sharma Nivas",
         "Type":"House",
-        "Price":15000
+        "Price":15000,
+        "Images" : "prop-3"
+
         },
         {
           "Id":4,
+          "SellRent":"1",
           "Name":"Mishra Nivas",
           "Type":"House",
-          "Price":12000
+          "Price":12000,
+          "Images" : "prop-4"
+
           },
           {
             "Id":5,
+            "SellRent":"2",
             "Name":"Baghel Banglow",
             "Type":"House",
-            "Price":12000
+            "Price":12000,
+            "Images" : "prop-5"
+
             },
             {
               "Id":6,
+              "SellRent":"2",
               "Name":"Kaushik Nivas",
               "Type":"House",
-              "Price":17000
-              }
+              "Price":17000,
+              "Images" : "prop-6"
+
+              },
+              {
+                "Id":7,
+                "SellRent":"2",
+                "Name":"Gupta Nivas",
+                "Type":"House",
+                "Price":17000,
+                "Images" : ""
+  
+                }
 ]

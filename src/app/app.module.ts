@@ -12,7 +12,9 @@ import { PropertyListComponent } from './Property/property-list/property-list.co
 import { HousingService } from './services/housing.service';
 import { AddPropertyComponent } from './Property/add-property/add-property.component';
 import { PropertyDetailComponent } from './Property/property-detail/property-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserLoginComponent } from './User/user-login/user-login.component';
+import { UserRegisterComponent } from './User/user-register/user-register.component';
 
 
 const appRoutes:Routes=[
@@ -20,6 +22,8 @@ const appRoutes:Routes=[
   {path:'rent-property',component:PropertyListComponent},
   {path:'add-property',component:AddPropertyComponent},
   {path:'property-detail/:id',component:PropertyDetailComponent},
+  {path:'user/login',component:UserLoginComponent},
+  {path:'user/register',component:UserRegisterComponent},
   {path:'**',component:PropertyListComponent},
 
 
@@ -33,6 +37,9 @@ const appRoutes:Routes=[
       NavBarComponent,
       AddPropertyComponent,
       PropertyDetailComponent,
+      UserLoginComponent,
+      UserRegisterComponent,
+
    ],
   imports: [
     BrowserModule,
@@ -40,6 +47,7 @@ const appRoutes:Routes=[
      HttpClientModule,
      RouterModule.forRoot(appRoutes),
      FormsModule,
+     ReactiveFormsModule,
   ],
   providers: [ HousingService],
   bootstrap: [AppComponent]

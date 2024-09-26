@@ -14,14 +14,24 @@ export class HousingService {
 {
   return this.http.get('data/properties.json').pipe(
     map(data=>{
-      const propertiesArray: Array<Iproperty> = [];
-      for(const id in data)
-      {
-        if(data.hasOwnProperty(id) && data[id].SellRent == SellRent){
-          propertiesArray.push(data[id]);
+      // const propertiesArray: Array<Iproperty> = [];
+      // for(const id in data)
+      // {
+        
+      //   if(data.hasOwnProperty(id) && data[id].SellRent === SellRent){
+      //     propertiesArray.push(data[id]);
+      //   }
+     // }
+      //return propertiesArray;
+
+      const propertiesArray : Array<Iproperty> =[];
+        const jsonData = JSON.stringify(data)
+        const tmp: Array<Iproperty> = JSON.parse(jsonData);
+        for(const id in tmp){
+          if(tmp[id].SellRent == SellRent)
+          propertiesArray.push(tmp[id])
         }
-      }
-      return propertiesArray;
+        return propertiesArray;
     }
 
     )
